@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Games — Paluna Games</title>
+  <meta name="description" content="Paluna Games — Games" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">Paluna Games</div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="/games/">Games</a>
+        <a href="/about/">About</a>
+        <a href="/press/">Press Kit</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h1 class="h1">Games</h1>
+      <p class="p">Our projects will appear here. Add Steam links when ready.</p>
+
+      <div class="grid">
+        <div class="card" style="margin:0">
+          <h3 style="margin:0 0 6px">Project Name (Coming Soon)</h3>
+          <p class="p" style="margin:0 0 12px">Short one-line pitch of your game.</p>
+          <a class="btn" href="#" onclick="return false;">Steam (soon)</a>
+        </div>
+
+        <div class="card" style="margin:0">
+          <h3 style="margin:0 0 6px">Prototype / R&D</h3>
+          <p class="p" style="margin:0 0 12px">Experiments and small builds.</p>
+          <a class="btn" href="mailto:contact@palunagames.com">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Paluna Games</div>
+      <div><a href="mailto:contact@palunagames.com">contact@palunagames.com</a></div>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
