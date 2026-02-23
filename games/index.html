@@ -1,19 +1,32 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Games — Paluna Games</title>
-  <meta name="description" content="Paluna Games — Games" />
+  <title>Crown of Ink — Paluna Games</title>
+  <meta name="description" content="Crown of Ink — Bureaucratic Horror / Dark Fantasy / Deduction" />
   <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
   <div class="wrap">
     <div class="nav">
-      <div class="brand">Paluna Games</div>
+      <div class="brand">
+        <svg class="icon" viewBox="0 0 64 64" aria-hidden="true">
+          <path fill="none" stroke="rgba(242,180,91,.75)" stroke-width="2.4" d="M10 46h44M16 46c2-10 6-18 16-26 10 8 14 16 16 26"/>
+          <path fill="rgba(242,180,91,.16)" stroke="rgba(242,180,91,.55)" stroke-width="2" d="M18 46c1-8 5-15 14-22 9 7 13 14 14 22H18z"/>
+          <path fill="rgba(255,207,134,.25)" d="M32 12c-3 4-3 8 0 12 3-4 3-8 0-12z"/>
+          <circle cx="22" cy="22" r="2.2" fill="rgba(255,207,134,.55)"/>
+          <circle cx="42" cy="22" r="2.2" fill="rgba(255,207,134,.55)"/>
+        </svg>
+        <div>
+          <div class="title">Paluna Games</div>
+          <div class="sub">Indie Game Studio</div>
+        </div>
+      </div>
+
       <div class="menu">
         <a href="/">Home</a>
-        <a href="/games/">Games</a>
+        <a href="/games/">Game</a>
         <a href="/about/">About</a>
         <a href="/press/">Press Kit</a>
         <a href="/contact/">Contact</a>
@@ -21,29 +34,52 @@
     </div>
 
     <div class="card">
-      <h1 class="h1">Games</h1>
-      <p class="p">Our projects will appear here. Add Steam links when ready.</p>
+      <div class="badge">Bureaucratic Horror / Dark Fantasy / Deduction</div>
+      <h1 class="h1">Crown of Ink</h1>
+      <p class="p">
+        A tactile bureaucracy experience where you rule a paranoid kingdom through documents slid under your door.
+      </p>
 
-      <div class="grid">
-        <div class="card" style="margin:0">
-          <h3 style="margin:0 0 6px">Project Name (Coming Soon)</h3>
-          <p class="p" style="margin:0 0 12px">Short one-line pitch of your game.</p>
-          <a class="btn" href="#" onclick="return false;">Steam (soon)</a>
+      <div class="btnrow">
+        <a class="btn disabled" href="#" onclick="return false;">Wishlist on Steam (Coming soon)</a>
+        <a class="btn primary" href="mailto:contact@palunagames.com">Request a build (publisher)</a>
+      </div>
+      <p class="small" style="margin-top:10px">Planned release: <b>2026 Q3</b> · Platform: <b>PC (Steam) + Steam Deck</b></p>
+
+      <hr />
+
+      <div class="grid2">
+        <div>
+          <div class="h2">Key Features</div>
+          <ul class="p" style="margin:8px 0 0; padding-left:18px">
+            <li><b>Diegetic (Zero-UI) desk world</b> — the interface is the world.</li>
+            <li><b>Deduction through documents</b> — cross-check, approve, deny, survive consequences.</li>
+            <li><b>Bureaucratic horror atmosphere</b> — paranoia, moral pressure, and tension at your desk.</li>
+            <li><b>Immersive storytelling</b> — narrative delivered through tangible artifacts.</li>
+            <li><b>Steam Deck support</b> — planned with tactile play in mind.</li>
+          </ul>
         </div>
 
-        <div class="card" style="margin:0">
-          <h3 style="margin:0 0 6px">Prototype / R&D</h3>
-          <p class="p" style="margin:0 0 12px">Experiments and small builds.</p>
-          <a class="btn" href="mailto:contact@palunagames.com">Contact</a>
+        <div class="card" style="margin:0;background:rgba(255,255,255,.02)">
+          <div class="h3">Status</div>
+          <p class="p" style="margin:0">
+            Steam page is in progress. Press assets and screenshots will be added to the Press Kit page when ready.
+          </p>
+          <hr />
+          <div class="h3">Publisher focus</div>
+          <p class="p" style="margin:0">
+            We are currently seeking publishing partners. Contact us for build access and materials.
+          </p>
         </div>
       </div>
     </div>
 
     <div class="footer">
       <div>© <span id="y"></span> Paluna Games</div>
-      <div><a href="mailto:contact@palunagames.com">contact@palunagames.com</a></div>
+      <div>Publisher inquiries: <a href="mailto:contact@palunagames.com">contact@palunagames.com</a></div>
     </div>
   </div>
+
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
