@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -10,10 +10,23 @@
 <body>
   <div class="wrap">
     <div class="nav">
-      <div class="brand">Paluna Games</div>
+      <div class="brand">
+        <svg class="icon" viewBox="0 0 64 64" aria-hidden="true">
+          <path fill="none" stroke="rgba(242,180,91,.75)" stroke-width="2.4" d="M10 46h44M16 46c2-10 6-18 16-26 10 8 14 16 16 26"/>
+          <path fill="rgba(242,180,91,.16)" stroke="rgba(242,180,91,.55)" stroke-width="2" d="M18 46c1-8 5-15 14-22 9 7 13 14 14 22H18z"/>
+          <path fill="rgba(255,207,134,.25)" d="M32 12c-3 4-3 8 0 12 3-4 3-8 0-12z"/>
+          <circle cx="22" cy="22" r="2.2" fill="rgba(255,207,134,.55)"/>
+          <circle cx="42" cy="22" r="2.2" fill="rgba(255,207,134,.55)"/>
+        </svg>
+        <div>
+          <div class="title">Paluna Games</div>
+          <div class="sub">Indie Game Studio</div>
+        </div>
+      </div>
+
       <div class="menu">
         <a href="/">Home</a>
-        <a href="/games/">Games</a>
+        <a href="/games/">Game</a>
         <a href="/about/">About</a>
         <a href="/press/">Press Kit</a>
         <a href="/contact/">Contact</a>
@@ -21,25 +34,59 @@
     </div>
 
     <div class="card">
+      <div class="badge">Press & Publisher Materials</div>
       <h1 class="h1">Press Kit</h1>
-      <p class="p">Add your studio assets here. Suggested items:</p>
-      <ul class="p">
-        <li>Studio logo (PNG + SVG)</li>
-        <li>Screenshots / key art</li>
-        <li>Short studio bio</li>
-        <li>Contact: <a href="mailto:press@palunagames.com">press@palunagames.com</a></li>
-      </ul>
+      <p class="p">
+        Assets will be added as they become available. For build access and materials, contact
+        <a href="mailto:contact@palunagames.com">contact@palunagames.com</a>.
+      </p>
 
       <hr />
-      <p class="p"><b>Downloads</b> (coming soon)</p>
-      <a class="btn" href="#" onclick="return false;">Download press kit .zip</a>
+
+      <div class="grid2">
+        <div>
+          <div class="h2">Studio Boilerplate</div>
+          <p class="p">
+            Paluna Games is an indie studio creating story-driven, immersive experiences with a focus on atmosphere.
+          </p>
+
+          <div class="h2" style="margin-top:18px">Crown of Ink — Factsheet</div>
+          <div class="kv">
+            <div><b>Genre:</b> <span>Bureaucratic Horror / Dark Fantasy / Deduction</span></div>
+            <div><b>Release:</b> <span>Planned — 2026 Q3</span></div>
+            <div><b>Platform:</b> <span>PC (Steam) + Steam Deck</span></div>
+            <div><b>Steam:</b> <span>Coming soon</span></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin:0;background:rgba(255,255,255,.02)">
+          <div class="h3">Key Features</div>
+          <ul class="p" style="margin:8px 0 0; padding-left:18px">
+            <li>Diegetic (zero-UI) desk world</li>
+            <li>Deduction through documents</li>
+            <li>Bureaucratic horror atmosphere</li>
+            <li>Immersive storytelling through tangible artifacts</li>
+            <li>Planned Steam Deck support</li>
+          </ul>
+
+          <hr />
+
+          <div class="h3">Downloads (coming soon)</div>
+          <div class="kv">
+            <div><b>Logo pack:</b> <span>soon</span></div>
+            <div><b>Screenshot pack:</b> <span>soon</span></div>
+            <div><b>Press kit ZIP:</b> <span>soon</span></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="footer">
       <div>© <span id="y"></span> Paluna Games</div>
-      <div><a href="mailto:press@palunagames.com">press@palunagames.com</a></div>
+      <div>Publisher inquiries: <a href="mailto:contact@palunagames.com">contact@palunagames.com</a></div>
     </div>
   </div>
+
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
